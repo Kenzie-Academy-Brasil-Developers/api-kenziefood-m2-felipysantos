@@ -1,0 +1,140 @@
+#carrinho {
+    width: 90%;    
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+#carrinho .titulo {
+    text-align: left;
+    background-color: #FF2253;
+    color: #FFFFFF;
+    width: 90%;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28.5px;
+    border-radius: 15px 15px 0 0;
+    padding: 18px 0 12px 25px;
+    margin: 0 auto;
+}
+
+#vitrine-carrinho {
+    margin: 0 auto;    
+    width: calc(100% - 15px);
+    height: 100%;
+    overflow-y: auto;    
+}
+
+#vitrine-carrinho .aviso-vazio {
+    color: #868E96;
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#vitrine-carrinho .aviso-vazio span i {
+    font-size: 45px;        
+}
+
+#vitrine-carrinho .aviso-vazio span {
+    font-weight: 700;    
+    margin: 5% 0 0 0;
+}
+
+#vitrine-carrinho .aviso-vazio p {
+    font-weight: 400;
+    margin: 5% 0 5% 0;
+}
+
+#vitrine-carrinho .aviso-vazio span, p {
+    font-size: 13px;
+}
+
+#vitrine-carrinho li div img {
+    width: 75px;
+    height: 75px;
+    border-radius: 9px;
+}
+
+#vitrine-carrinho li div h2 {    
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+#vitrine-carrinho li div p {
+    color: #868E96;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+#vitrine-carrinho li div span {
+    color: #212529;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 16px;    
+}
+
+#vitrine-carrinho li div button {
+    width: 27px;
+    height: 27px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F8F9FA;
+    color: #868E96;    
+}
+
+#vitrine-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 18px 10px 38px 10px;    
+}
+
+#vitrine-carrinho li div:nth-child(2) {
+    text-align: left;
+    flex-basis: 55%;
+}
+
+#vitrine-carrinho li div:last-child {
+    align-self: flex-start;
+}
+
+/* #vitrine-carrinho {
+    scrollbar-width: 15px;
+    scrollbar-color: violet ;
+} */
+
+#vitrine-carrinho::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+#vitrine-carrinho::-webkit-scrollbar {
+    width: 5px;
+    background: #F4F4F4;
+}
+#vitrine-carrinho::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+#quantidade {
+    background-color: #F8F9FA;
+}
+
+#quantidade, #total {    
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 12px;
+    height: 62px;    
+    width: 90%;
+}
