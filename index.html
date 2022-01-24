@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27a399c461.js" crossorigin="anonymous"></script>
     <title>KenzieFood</title>
 </head>
 <body>
-    
+    <header>
+        <section id="header">
+            <div><img src="#" alt="logo"></div>
+            <div>
+                <input id="barra-pesquisar" type="text" placeholder="Pesquisar por produto">
+                <button id="botao-pesquisar"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <div id="topicos">
+                <button class="botao-topico botao-todos">Todos</button>
+                <button class="botao-topico botao-panificadora">Panificadora</button>
+                <button class="botao-topico botao-frutas">Frutas</button>
+                <button class="botao-topico botao-bebidas">Bebidas</button>
+            </div>
+
+            <div id="produtos">
+                <ul id="vitrine">
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="#" alt="">img
+                                <figcaption>Tópico</figcaption>
+                            </figure>
+                            <h2>Título</h2>
+                            <p>Descrição</p>
+                        </div>
+
+                        <div>
+                            <span>R&#36;00,00</span>
+                            <button><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <span><i class="fas fa-cart-arrow-down"></i> Carrinho</span>
+            <ul id="vitrine-carrinho">
+                
+                <div>
+                    <span><i class="fas fa-shopping-bag"></i></span>
+                    <span>Oops&#33;&#33;</span>
+                    <p>Não temos nenhum produto no momento</p>
+                </div>
+
+                <li>
+                    <div><img src="#" alt="">img</div>
+                    <div>
+                        <h2>Título</h2>
+                        <p>Tópico</p>
+                        <span>R&#36;00,00</span>
+                    </div>
+                    <div>
+                        <button id="remover"><i class="fas fa-trash"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
