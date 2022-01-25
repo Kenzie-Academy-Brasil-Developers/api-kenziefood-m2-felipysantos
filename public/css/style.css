@@ -1,3 +1,4 @@
+
 #header{
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +17,7 @@
     padding: 5px;
 }
 #barra-pesquisar{
-	width:265px;
+	width:255px;
 	height:35px;
     border: none;
     background: none;
@@ -32,8 +33,8 @@ header button{
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 main .botao-topico {
     border-radius: 30px;
@@ -77,3 +78,17 @@ main .botao-topico {
     width: 15px;
     height: 15px;
 }
+
+#vitrine {
+    display: flex;
+}
+
+
+#vitrine li {
+    width: 80vw;
+}
+
+#vitrine li img {
+    width: 60vw;
+}
+
