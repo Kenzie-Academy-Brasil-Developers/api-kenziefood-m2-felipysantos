@@ -5,17 +5,22 @@
     
 }
 #barra-completa {
-    padding: 0 0 17px 17px;
-    
+   
+    background-color:#E9ECEF;
+    border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
 }
 #barra-pesquisar{
 	width:265px;
 	height:35px;
-	background-color:#E9ECEF;
-	border-radius: 30px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
     border: none;
+    background: none;
+    
 }
 header ::placeholder{
     padding: 10px;
@@ -60,6 +65,15 @@ main .botao-topico {
 }
 #topicos{
     display: flex;
-    
+    justify-content: space-around;  
+    width: 150vw;
+    margin-top: 15px;
 }
-
+.icone-botao{
+    width: 18px;
+    height: 12px;
+}
+.icone-bebida{
+    width: 15px;
+    height: 15px;
+}
