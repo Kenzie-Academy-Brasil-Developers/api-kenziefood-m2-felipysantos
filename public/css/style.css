@@ -1,0 +1,65 @@
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    
+}
+#barra-completa {
+    padding: 0 0 17px 17px;
+    
+}
+#barra-pesquisar{
+	width:265px;
+	height:35px;
+	background-color:#E9ECEF;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+    border: none;
+}
+header ::placeholder{
+    padding: 10px;
+}
+header button{
+    color: #FF2253;
+    background-color: #FFE9EE;
+    border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+main .botao-topico {
+    border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+    border: none;
+    height:30px;
+}
+
+.botao-todos{
+    background-color: #EEF6FF;
+    width: 72px;
+    height: 40px;
+}
+.botao-panificadora{
+    background-color: #FFF7F4;
+    width: 148px;
+    height: 40px;
+}
+.botao-frutas{
+    background-color: #FFE4EA;
+    width: 107px;
+    height: 40px;
+}
+.botao-bebidas{
+    background-color: #F3EEF5;
+    width: 118px;
+    height: 40px;
+}
+#topicos{
+    display: flex;
+    
+}
+
