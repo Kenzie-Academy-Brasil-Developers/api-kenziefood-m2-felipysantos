@@ -1,0 +1,12 @@
+#vitrine {
+    display: flex;
+}
+
+
+#vitrine li {
+    width: 80vw;
+}
+
+#vitrine li img {
+    width: 60vw;
+}

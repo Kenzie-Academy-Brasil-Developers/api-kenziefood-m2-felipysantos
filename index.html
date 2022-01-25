@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <title>KenzieFood</title>
 </head>
+
 <body>
     <header>
         <section id="header">
@@ -31,30 +33,14 @@
             </div>
 
             <div id="produtos">
-                <ul id="vitrine">
-                    <li>
-                        <div>
-                            <figure>
-                                <img src="#" alt="">img
-                                <figcaption>Tópico</figcaption>
-                            </figure>
-                            <h2>Título</h2>
-                            <p>Descrição</p>
-                        </div>
-
-                        <div>
-                            <span>R&#36;00,00</span>
-                            <button><i class="fas fa-cart-plus"></i></button>
-                        </div>
-                    </li>
-                </ul>
+                <ul id="vitrine"></ul>
             </div>
         </section>
 
         <section id="carrinho">
             <span><i class="fas fa-cart-arrow-down"></i> Carrinho</span>
             <ul id="vitrine-carrinho">
-                
+
                 <div>
                     <span><i class="fas fa-shopping-bag"></i></span>
                     <span>Oops&#33;&#33;</span>
@@ -76,10 +62,15 @@
             <div id="quantidade">
                 <p>Quantidade</p><span>0</span>
             </div>
-            <div id="total">   
+            <div id="total">
                 <p>Total</p><span>R&#36;00,00</span>
             </div>
         </section>
     </main>
+
+
+
+    <script type="module" src="./src/models/gerarInfo.js"></script>
 </body>
+
 </html>
