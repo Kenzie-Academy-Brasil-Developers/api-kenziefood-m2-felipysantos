@@ -1,10 +1,11 @@
 class ProdutoCarrinho {
-    
+
     static container = document.getElementById("vitrine-carrinho");
 
     static
         gerarProdutoCarrinho(produto) {
-        
+
+        const { imagem, nome, descricao, preco } = produto
         const li = document.createElement("li")
 
         this.container.innerHTML = "";
@@ -25,4 +26,4 @@ class ProdutoCarrinho {
     }
 }
 
-export {ProdutoCarrinho}
+export { ProdutoCarrinho }
