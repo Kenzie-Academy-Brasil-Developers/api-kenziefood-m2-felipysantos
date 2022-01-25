@@ -5,7 +5,7 @@ class ProdutoCarrinho {
     static
         gerarProdutoCarrinho(produto) {
 
-        const { imagem, nome, descricao, preco } = produto
+        const { imagem, nome, categoria, preco } = produto
         const li = document.createElement("li")
 
         this.container.innerHTML = "";
@@ -15,7 +15,7 @@ class ProdutoCarrinho {
             <div><img src="${imagem}" alt=""></div>
             <div>
                 <h2>${nome}</h2>
-                <p>${descricao}</p>
+                <p>${categoria}</p>
                 <span>R&#36;${preco}</span>
             </div>
             <div>
