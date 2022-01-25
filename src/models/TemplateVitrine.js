@@ -27,8 +27,8 @@ class TemplateVitrine {
             <p>${this.descricao}</p>
             </div>
         
-            <div>
-                <span>${this.preco}</span>
+            <div class="li-inferior">
+                <span>R&#36;${this.preco}</span>
                 <button><i class="fas fa-cart-plus"></i></button>
             </div>
         `;
