@@ -4,7 +4,7 @@
     position: relative;
     margin: 0 0 0 20px;
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -34,6 +34,9 @@
 }
 
 #vitrine li figure figcaption {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
     background-color: #ffe9ee;
     position: absolute;
     border-radius: 15px;
@@ -42,12 +45,15 @@
     padding: 5px 15px;
     font-size: 12px;
 }
+#vitrine li figure figcaption img{
+    width: 1.6em;
+}
 
 #vitrine li h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    margin: 27px 0 16px 0;
+    margin: 30px 0 0 0;
     height: 30px;
 }
 
@@ -60,21 +66,32 @@
 }
 
 .li-inferior {
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #212529;
+    font-weight: 700;
 }
 
 .li-inferior button {
     border: none;
+    width: 35px;
+    height: 35px;
     background-color: #e4f7ef;
-    padding: 10px;
     border-radius: 50%;
     color: #4aca94;
+    font-size: 11px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 #header {
     display: flex;
+    width: 90%;    
     flex-wrap: wrap;
     font-size: 14px;
 }
@@ -88,6 +105,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 5px;
+    width: 90vw;
 }
 
 #barra-pesquisar {
@@ -95,11 +113,9 @@
     height: 35px;
     border: none;
     background: none;
+    padding: 0 10px;
 }
 
-header ::placeholder {
-    padding: 10px;
-}
 
 header button {
     color: #ff2253;
@@ -164,7 +180,7 @@ main .botao-topico {
     display: flex;
     justify-content: space-around;
     width: 150vw;
-    margin-top: 15px;
+    margin: 20px 0;
 }
 
 .icone-botao {
@@ -195,7 +211,7 @@ main .botao-topico {
     line-height: 28.5px;
     border-radius: 15px 15px 0 0;
     padding: 18px 0 12px 25px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 #vitrine-carrinho {
