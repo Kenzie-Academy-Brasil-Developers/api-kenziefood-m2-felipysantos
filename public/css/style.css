@@ -48,22 +48,22 @@ main .botao-topico {
 .botao-todos{
     background-color: #EEF6FF;
     width: 72px;
-    height: 40px;
+    height: 45px;
 }
 .botao-panificadora{
     background-color: #FFF7F4;
     width: 148px;
-    height: 40px;
+    height: 45px;
 }
 .botao-frutas{
     background-color: #FFE4EA;
     width: 107px;
-    height: 40px;
+    height: 45px;
 }
 .botao-bebidas{
     background-color: #F3EEF5;
     width: 118px;
-    height: 40px;
+    height: 45px;
 }
 #topicos{
     display: flex;
@@ -232,7 +232,29 @@ main .botao-topico {
     width: calc(90% - 44px)
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+    #header {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 50px 15px 10px;
+    }
+    
+    #topicos {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .botao-todos{
+        margin: 0 20px 20px;
+    }
+    .botao-panificadora{
+        margin: 0 20px 20px;
+    }
+    .botao-frutas{
+        margin: 0 20px 20px;
+    }
+    .botao-bebidas{
+        margin: 0 20px 20px;
+    }
     #carrinho {
         width: 400px;
     }
