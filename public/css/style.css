@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+button {
+    cursor: pointer;
+}
+
 #vitrine {
     position: relative;
     margin: 0 0 0 20px;
@@ -198,6 +202,7 @@ main .botao-topico {
 }
 
 #carrinho {
+    max-width: 400px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -215,7 +220,7 @@ main .botao-topico {
     line-height: 28.5px;
     border-radius: 15px 15px 0 0;
     padding: 18px 0 12px 25px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
 }
 
 #vitrine-carrinho {
@@ -339,7 +344,7 @@ p {
     width: calc(90% - 44px);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     #header {
         display: flex;
         justify-content: space-between;
@@ -354,6 +359,10 @@ p {
         justify-content: flex-start;
         width: 100%;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    
     .botao-todos{
         margin: 0 20px 20px;
     }
