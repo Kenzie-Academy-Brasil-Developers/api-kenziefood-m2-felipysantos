@@ -4,13 +4,15 @@ class TemplateVitrine {
         categoria,
         descricao,
         preco,
-        imagem
+        imagem,
+        id
     }) {
         this.nome = nome;
         this.categoria = categoria;
         this.descricao = descricao;
         this.preco = preco;
         this.imagem = imagem;
+        this.id = id
     }
 
     gerarTemplate() {
@@ -27,7 +29,7 @@ class TemplateVitrine {
         if (this.categoria === "Bebidas") {
             imagemCategoria.src = "public/image/bebida.png";
         }
-
+        li.setAttribute('id', this.id)
         li.innerHTML = `
             <div>
             <figure>
@@ -40,7 +42,7 @@ class TemplateVitrine {
         
             <div class="li-inferior">
                 <span>R&#36;${this.preco}</span>
-                <button><i class="fas fa-cart-plus"></i></button>
+                <button id="${this.id}"><i class="fas fa-cart-plus"></i></button>
             </div>
         `;
 
