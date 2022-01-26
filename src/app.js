@@ -1,5 +1,6 @@
 import {Filtros} from './controller/Filtros.js'
 import {ControllerCarrinho} from './controller/ControllerCarrinho.js'
+import { ProdutoCarrinho } from './models/TemplateCarrinho.js'
 
 const botãoPanificadora = document.querySelector(".botao-panificadora")
 const botãoFrutas = document.querySelector(".botao-frutas")
@@ -19,4 +20,14 @@ vitrine.addEventListener("click", (event) => {
     if (botaoComprar.tagName === "BUTTON" || botaoComprar.tagName === "I") {
         const newObj = ControllerCarrinho.pegarId(botaoComprar.closest('li').id)
     }
+})
+
+const carrinho = document.querySelector("#vitrine-carrinho")
+carrinho.addEventListener("click", (event) => {
+    const botaoDeletar = event.target
+    if (botaoDeletar.tagName === "BUTTON" || botaoDeletar.tagName === "I") {
+        const deletar = ControllerCarrinho.deletarItem(botaoDeletar.closest("li").id)        
+        // ProdutoCarrinho.gerarAviso
+        // ControllerCarrinho.AvisoVazio()
+    }        
 })

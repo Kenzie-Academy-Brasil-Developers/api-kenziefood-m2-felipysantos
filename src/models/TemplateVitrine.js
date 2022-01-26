@@ -10,7 +10,7 @@ class TemplateVitrine {
         this.nome = nome;
         this.categoria = categoria;
         this.descricao = descricao;
-        this.preco = preco;
+        this.preco = preco.toFixed(2).replace(".", ",");
         this.imagem = imagem;
         this.id = id
     }
