@@ -1,8 +1,8 @@
 import { TemplateVitrine } from "../models/TemplateVitrine.js";
 
-class Filtros {   
+class Filtros {
 
-    static async FiltroPanificadora() {        
+    static async FiltroPanificadora() {
         const ul = document.querySelector("#vitrine");
         ul.innerHTML = ""
         const response = await fetch('https://kenzie-food-api.herokuapp.com/product')
@@ -16,7 +16,7 @@ class Filtros {
             }));
     }
 
-    static async FiltroFrutas() {        
+    static async FiltroFrutas() {
         const ul = document.querySelector("#vitrine");
         ul.innerHTML = ""
         const response = await fetch('https://kenzie-food-api.herokuapp.com/product')
@@ -29,8 +29,8 @@ class Filtros {
                 vitrine.gerarTemplate()
             }));
     }
-    
-    static async FiltroBebidas() {        
+
+    static async FiltroBebidas() {
         const ul = document.querySelector("#vitrine");
         ul.innerHTML = ""
         const response = await fetch('https://kenzie-food-api.herokuapp.com/product')
@@ -58,39 +58,24 @@ class Filtros {
     }
 
     static async FiltroBusca() {
-        const input = document.getElementById("barra-pesquisar")        
+        const input = document.getElementById("barra-pesquisar")
         const buscando = input.value.toLowerCase()
         const newArr = []
+        const ul = document.querySelector("#vitrine");
+        ul.innerHTML = ""
 
         const response = await fetch('https://kenzie-food-api.herokuapp.com/product')
-            .then((res) => res.json())
-            // .then((data) => data.filter(item => {
-            //     console.log(data.nome.includes(busca))
-            //     return item.nome.toLowerCase() === busca
-            // }))
-            .then ((arr) => {
-                arr.forEach((item) => {                    
-                    let busca = item.nome.toLowerCase()
-                    // console.log(busca)
-                    // console.log(buscando)
-                    // console.log(busca.includes(buscando))
+            .then((res) => res.json())            
+            .then((arr) => {
+                arr.forEach((item) => {
+                    let busca = item.nome.toLowerCase()                                        
                     if (busca.includes(buscando)) {
-                        newArr.push(item)
-                        console.log(newArr)
+                        newArr.push(item)                        
+                        const vitrine = new TemplateVitrine(item)
+                        vitrine.gerarTemplate()
                     }
                 })
             })
-            .then(newArr.forEach((item) => {
-                console.log(item)
-                const vitrine = new TemplateVitrine(item)
-                vitrine.gerarTemplate()
-            }))
-            
-            // .then((arr) => arr.forEach((element) => {
-            //     const vitrine = new TemplateVitrine(element)
-            //     vitrine.gerarTemplate()
-            // }));
-        
     }
 }
 
