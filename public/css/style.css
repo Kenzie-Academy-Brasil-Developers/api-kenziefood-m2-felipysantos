@@ -5,7 +5,6 @@ button {
 }
 
 #vitrine {
-    min-width: 700px;
     position: relative;
     margin: 0 0 0 20px;
     display: flex;
@@ -389,6 +388,7 @@ p {
         align-items: flex-start;
     }
     #vitrine {
+        min-width: 600px;
         max-width: 900px;
         flex-wrap: wrap;
         margin: 0;
@@ -407,6 +407,6 @@ p {
 
     #carrinho {
         
-        width: 400px;
+        min-width: 400px;
     }
 }
