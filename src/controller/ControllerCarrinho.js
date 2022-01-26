@@ -16,11 +16,22 @@ class ControllerCarrinho {
         
         this.pro.forEach((element) =>{
             const newObj = ProdutoCarrinho.gerarProdutoCarrinho(element)
+            this.pegarQtd()
+            this.pegarTotal()
         })
     }
     
-    
+    static qtd = document.getElementById("id-span");
+    static pegarQtd(){
+        this.qtd.innerText = this.pro.length 
+    }
 
+    static valorTotal = document.getElementById("id-total");
+    static pegarTotal(){
+        const soma = this.pro.reduce((acc, atual) => {
+            return acc + atual.preco},0)
+            this.valorTotal.innerText = `R$ ${soma.toFixed(2)}`
+    } 
 }
 
 export {ControllerCarrinho}
