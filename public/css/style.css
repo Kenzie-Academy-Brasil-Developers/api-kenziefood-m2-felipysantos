@@ -159,25 +159,25 @@ main .botao-topico {
 .botao-todos {
     background-color: #eef6ff;
     width: 72px;
-    height: 45px;
+    height: 40px;
 }
 
 .botao-panificadora {
     background-color: #fff7f4;
     width: 148px;
-    height: 45px;
+    height: 40px;
 }
 
 .botao-frutas {
     background-color: #ffe4ea;
     width: 107px;
-    height: 45px;
+    height: 40px;
 }
 
 .botao-bebidas {
     background-color: #f3eef5;
     width: 118px;
-    height: 45px;
+    height: 40px;
 }
 
 #topicos {
@@ -196,20 +196,6 @@ main .botao-topico {
     width: 15px;
     height: 15px;
 }
-
-#vitrine {
-    display: flex;
-}
-
-
-#vitrine li {
-    width: 80vw;
-}
-
-#vitrine li img {
-    width: 60vw;
-}
-
 
 #carrinho {
     width: 100%;
@@ -353,28 +339,41 @@ p {
     width: calc(90% - 44px);
 }
 
-@media screen and (min-width: 768px) {
-    #header {
+@media screen and (min-width: 1024px) {
+    main {
         display: flex;
-        justify-content: space-between;
-        margin: 15px 50px 15px 10px;
+        padding: 5%;
     }
+    #container-produtos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
     #topicos {
-        display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
     }
-    .botao-todos{
-        margin: 0 20px 20px;
+
+
+    #vitrine {
+        max-width: 900px;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
     }
-    .botao-panificadora{
-        margin: 0 20px 20px;
+
+    #vitrine li {
+        width: 30%;
+        margin-bottom: 80px;
+    } 
+
+    #vitrine li figure img {
+        width: 97%;
+        
     }
-    .botao-frutas{
-        margin: 0 20px 20px;
-    }
-    .botao-bebidas{
-        margin: 0 20px 20px;
-    }
+
     #carrinho {
         
         width: 400px;
