@@ -8,7 +8,6 @@ class ProdutoCarrinho {
         const { imagem, nome, categoria, preco } = produto
         const li = document.createElement("li")
 
-        this.container.innerHTML = "";
 
         li.innerHTML =
             `
