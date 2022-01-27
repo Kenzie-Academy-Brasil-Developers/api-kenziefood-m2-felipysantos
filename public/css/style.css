@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+button {
+    cursor: pointer;
+}
+
 #vitrine {
     position: relative;
     margin: 0 0 0 20px;
@@ -84,7 +88,14 @@
     border-radius: 50%;
     color: #4aca94;
     font-size: 11px;
+    transition: 0.2s;
 }
+
+.li-inferior button:hover {
+    background-color: #4aca94;
+    color: #e4f7ef;
+}
+
 
 header {
     display: flex;
@@ -123,12 +134,17 @@ header {
 header button {
     color: #ff2253;
     background-color: #ffe9ee;
-    border-radius: 50px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border: none;
     width: 40px;
     height: 40px;
+}
+
+header button:hover{
+    color: #ffe9ee;
+    background-color: #ff2253;
 }
 
 #container-topicos {
@@ -199,6 +215,8 @@ main .botao-topico {
 }
 
 #carrinho {
+    /* min-width: 400px; */
+    max-width: 400px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -216,7 +234,7 @@ main .botao-topico {
     line-height: 28.5px;
     border-radius: 15px 15px 0 0;
     padding: 18px 0 12px 25px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
 }
 
 #vitrine-carrinho {
@@ -340,10 +358,41 @@ p {
     width: calc(90% - 44px);
 }
 
+@media screen and (min-width: 768px) {
+    #header {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 50px 15px 10px;
+    }
+    #barra-completa {
+        display: flex;
+        width: 255px;
+    }
+    #topicos {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    
+    .botao-todos{
+        margin: 0 20px 20px;
+    }
+    .botao-panificadora{
+        margin: 0 20px 20px;
+    }
+    .botao-frutas{
+        margin: 0 20px 20px;
+    }
+    .botao-bebidas{
+        margin: 0 20px 20px;
+    }
+
     main {
         display: flex;
-        padding: 5%;
+        padding: 0 5%;
     }
     #container-produtos{
         display: flex;
@@ -351,14 +400,8 @@ p {
         justify-content: center;
         align-items: flex-start;
     }
-
-    #topicos {
-        justify-content: space-between;
-        width: 100%;
-    }
-
-
     #vitrine {
+        min-width: 600px;
         max-width: 900px;
         flex-wrap: wrap;
         margin: 0;
@@ -377,6 +420,6 @@ p {
 
     #carrinho {
         
-        width: 400px;
+        min-width: 400px;
     }
 }
