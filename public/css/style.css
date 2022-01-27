@@ -102,6 +102,11 @@ header {
     justify-content: center;
 }
 
+header img {
+    width: 123px; 
+    height: 50px;
+}
+
 #header {
     display: flex;
     width: 90%;    
