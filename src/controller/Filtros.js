@@ -5,7 +5,7 @@ class Filtros {
     static async FiltroPanificadora() {
         const ul = document.querySelector("#vitrine");
         ul.innerHTML = ""
-        const response = await fetch('https://cors-anywhere.herokuapp.com/https://kenzie-food-api.herokuapp.com/product')
+        const response = await fetch('https://kenzie-food-api.herokuapp.com/product')
             .then((res) => res.json())
             .then((data) => data.filter(item => {
                 return item.categoria === "Panificadora"
